@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html data-wf-page="5ed56f8788d63300e5f3374c" data-wf-site="5ed1cf34bf802c5f339f8167">
+{%include 'navbar.html'%}
+      <div data-w-id="98e59693-2cfb-f947-5375-5e08d59b729f" class="close-wrapper">
+        <div class="close-line"></div>
+        <div class="close-line line-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section blog_hero">
+    <div class="container blog_hero_content">
+      <h1 class="white_h1 max_700">Celebrating experiences together</h1>
+      <p class="blog_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+        vitae erat.</p><a href="#Blog" class="button w-button">Explore stories</a>
+    </div>
+    <div class="search-and-slider_contain">
+     
+          <form  method=POST  action="{% url 'search' %}" class="search blog_page w-form">
+            {% csrf_token %}
+            <input type="search" placeholder="search" aria-label="search"  class="search-input on_blog_page w-input" name="searching">
+            <input type="submit" class="search-button on_blog_pag w-button" value="⌕" />
+          </form>
+      
+    </div>
+    <div data-delay="5000" data-animation="fade" class="blog_hero_bg_slider w-slider" data-autoplay="true"
+      data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0"
+      data-nav-spacing="3" data-duration="800" data-infinite="true">
+      <div class="w-slider-mask">
+        <div data-w-id="84f633af-5f86-faf7-ec35-8c7f2f702552" class="blog_hero_slide w-slide">
+          <div
+            style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="blog_hero_slide_image"></div>
+        </div>
+        <div data-w-id="84f633af-5f86-faf7-ec35-8c7f2f702553" class="blog_hero_slide _2 w-slide">
+          <div class="blog_hero_slide_image _2"></div>
+        </div>
+        <div data-w-id="847e4bbc-fc5a-d13a-77be-d81dd05d0c96" class="blog_hero_slide w-slide">
+          <div class="blog_hero_slide_image _3"></div>
+        </div>
+      </div>
+      <div class="blog-hero-left-arrow w-slider-arrow-left">
+        <div class="w-icon-slider-left"></div>
+      </div>
+      <div class="blog-hero-right-arrow w-slider-arrow-right">
+        <div class="w-icon-slider-right"></div>
+      </div>
+      <div class="blog-hero-slide-nav w-slider-nav w-round"></div>
+    </div><img src="../../media//travel-20tell-20stencil-202.svg" alt="" class="confetti_hero_svg blog" />
+  </div>
+  <div id="Blog" class="section blog">
+    <div class="container blog_posts">
+      <div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease"
+        class="tabs on-blog w-tabs">
+        <div class="tabs-menu w-tab-menu"><a data-w-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
+            <div><b>Blogs</b></div>
+          </a>
+        </div>
+        <div class="tabs-content w-tab-content">
+          <div data-w-tab="Tab 1" class="tab-pane-tab-1 w-tab-pane w--tab-active">
+            <div class="w-layout-grid grid">
+              <div class="blog-collection-list-wrapper w-dyn-list">
+                <div role="list" class="blog-collection-list w-dyn-items">
+                  {% for x in blog_item %}
+                  <div role="listitem" class="w-dyn-item"><a href="{% url 'blogs' x.id %}"
+                      class="story_wrap w-inline-block">
+                      <div style="background-image:url(&quot;../../media//ammie-ngo-vcu-ozbxxrk-unsplash.jpg&quot;)"
+                        class="story_image on_blog_page">
+                       
+                        <div style="background-image:url('{{x.img.url}}')"
+                          class="card_image_hover_expand"></div>
+                      </div>
+                      <div class="story_content">
+                        <h4>{{x.blog_title}}</h4>
+                        <p>{{x.blog_content|truncatewords:50}}</p>
+                       
+                      </div>
+                    </a></div>
+                    {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="section footer_section">
+    <div class="footer">
+      <div class="container">
+        <div class="footer_content_wrapper">
+          <div class="logo_and_subscribe_wrap"><a data-w-id="822756f3-5bbb-c983-fef1-280c17673ddb" href="/"
+              class="link-block-2 w-inline-block"><img src="../../media//traveltell_dark_logo.png" width="123" alt=""
+                sizes="123px"
+                srcset="../../media//traveltell_dark_logo-p-500.png 500w, ../../media//traveltell_dark_logo-p-800.png 800w, ../../media//traveltell_dark_logo.png 1034w"
+                class="footer_logo" /></a>
+            <div data-w-id="822756f3-5bbb-c983-fef1-280c17673ddd" class="footer_social_wrap"><a
+                href="https://www.facebook.com/" target="_blank" class="social_../../media/_link first w-inline-block"><img
+                  src="../../media//faceb.png" width="25" alt="" sizes="(max-width: 767px) 25px, (max-width: 991px) 3vw, 25px"
+                  srcset="../../media//faceb-p-500.png 500w, ../../media//faceb.png 766w" /></a><a href="https://twitter.com"
+                target="_blank" class="social_../../media/_link w-inline-block"><img src="../../media//twitter1.png" width="25"
+                  alt="" sizes="(max-width: 767px) 25px, (max-width: 991px) 3vw, 25px"
+                  srcset="../../media//twitter1-p-500.png 500w, ../../media//twitter1-p-800.png 800w, ../../media//twitter1.png 827w" /></a><a
+                href="https://www.linkedin.com/" target="_blank" class="social_../../media/_link w-inline-block"><img
+                  src="../../media//5e1ed0b824ceb838fadfa9b7_linkedin-icon-png-transparent-background-5.png" width="25" alt=""
+                  sizes="(max-width: 767px) 25px, (max-width: 991px) 3vw, 25px"
+                  srcset="../../media//5e1ed0b824ceb838fadfa9b7_linkedin-icon-png-transparent-background-5-p-500.png 500w, ../../media//5e1ed0b824ceb838fadfa9b7_linkedin-icon-png-transparent-background-5.png 609w" /></a>
+            </div>
+          </div>
+          <div class="footer_links_wrapper">
+            <div data-w-id="822756f3-5bbb-c983-fef1-280c17673de5" class="footer_nav_column"><a href="/blog"
+                aria-current="page" class="footer_link w--current">Blog</a><a href="/places"
+                class="footer_link">Places</a><a href="/traveltellers" class="footer_link">TravelTellers</a><a
+                href="/videos" class="footer_link">Videos</a></div>
+            <div data-w-id="822756f3-5bbb-c983-fef1-280c17673dee" class="footer_nav_column"><a href="/shop"
+                class="footer_link">Shop</a><a href="/contact" class="footer_link">Contact</a><a href="/private-policy"
+                class="footer_link">Private Policy</a><a href="/terms" class="footer_link">Terms &amp; Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights_contain">
+      <div>
+        <div data-w-id="822756f3-5bbb-c983-fef1-280c17673df7" class="copyrights">Crafted by <a
+            href="https://www.marioncotemplates.com/" class="copyrights_link">Marion &amp; Co.</a>  |  Powered by <a
+            href="http://webflow.com/" target="_blank" class="copyrights_link">Webflow</a>  |  <a
+            href="https://webflow.com/templates/designers/marion-co" target="_blank"
+            class="copyrights_link">More templates</a>  |  <a href="/image-licensing" class="copyrights_link">Image
+            License</a>  |  <a href="/style-guide" class="copyrights_link">Style Guide</a></div>
+      </div>
+    </div>
+    <div class="footer_svg_wrap"><img src="../../media//footer-20svg.svg" width="304" alt="" class="footer_svg" /></div>
+  </div>
+  {%load static%}
+  <script src="{% static 'jquery.js' %}" ></script>
+  <script src="{% static 'webflow-script.js' %}" ></script>
+  
+  <script>
+
+    $(document).on('click','#add_cart',function (e) {
+      e.preventDefault();
+      $.ajax({
+    
+          type:'POST',
+          url:'{% url "add"  %}',
+          data:{
+    
+            package_id:$('#add_cart').val(),
+            package_amount:$('#no_adults option:selected').text(),
+            csrfmiddlewaretoken:'{{ csrf_token  }}',
+            action:'post'
+    
+            
+    
+          },
+          success:function (json) {
+            console.log(json)
+            document.getElementById("amount").textContent=json.amount
+            
+          },
+          error:function (xhr,errmsg,err) {
+            
+          }
+    
+      });
+    
+    
+    
+    
+    
+    
+    })
+    
+    
+    </script>  
+</body>
+
+</html>

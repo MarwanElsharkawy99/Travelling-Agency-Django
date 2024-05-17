@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="72px" viewBox="0 0 105 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hamburger</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="hamburger" transform="translate(5.000000, 5.500000)" stroke="#232222" stroke-width="10">
+            <g id="Group-18">
+                <line x1="0.374518817" y1="0.5" x2="94.7208199" y2="0.5" id="Path-9"></line>
+                <line x1="-1.13686838e-13" y1="60.5" x2="94.3463011" y2="60.5" id="Path-9"></line>
+                <line x1="7" y1="30.5" x2="88" y2="30.5" id="Path-9"></line>
+            </g>
+        </g>
+    </g>
+</svg>

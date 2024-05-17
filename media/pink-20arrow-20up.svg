@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="20px" viewBox="0 0 30 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pink arrow up</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <path d="M4,16 L16.464189,2.82109024 C16.8436813,2.41983713 17.4766005,2.4021965 17.8778536,2.78168878 C17.9074193,2.80965111 17.9352506,2.8393921 17.9611923,2.87074584 L28,15.0039137 L28,15.0039137" id="pink-arrow-up" stroke="#FF0149" stroke-width="5" transform="translate(16.000000, 9.000000) rotate(10.000000) translate(-16.000000, -9.000000) "></path>
+    </g>
+</svg>

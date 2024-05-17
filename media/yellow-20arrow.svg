@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>yellow arrow</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <path d="M5,22 L17.464189,8.82109024 C17.8436813,8.41983713 18.4766005,8.4021965 18.8778536,8.78168878 C18.9074193,8.80965111 18.9352506,8.8393921 18.9611923,8.87074584 L29,21.0039137 L29,21.0039137" id="yellow-arrow" stroke="#FAAA04" stroke-width="5" transform="translate(17.000000, 15.000000) scale(1, -1) rotate(40.000000) translate(-17.000000, -15.000000) "></path>
+    </g>
+</svg>

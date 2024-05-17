@@ -1,0 +1,542 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+     <!-- <nav>
+      
+      <div><a href="{% url 'home' %}">Omania</a></div>
+      <ul >
+        <li class="link"><a href="{% url 'home' %}">Home</a></li>
+        <li class="link"><a href="{% url 'packs' %}">packages</a></li>
+        <li class="link"><a href="{% url 'blog'   %}">Blog</a></li>
+        <li class="link"><a href="#">Contact Us</a></li>
+        <li class="link"><a href="#">Custom Package</a></li>
+        <li class="link"><a href="{% url 'summary'  %}">cart <span id="amount">{{ cart|length }}</span></a></li>
+      </ul>
+      <form  method=POST  action="{% url 'search' %}">
+        {% csrf_token %}
+        <input type="search" placeholder="search" aria-label="search" name="searching">
+        <button type="submit">search</button>
+      </form>
+    </nav>  -->
+
+<!-- 
+
+    <nav class="bg-white shadow">
+      <div class="logo-container">
+        <div><a href="{% url 'home' %}"><h2>Omania</h2></a></div>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="links-container">
+        <a href="{% url 'home' %}" class="text-gray-600 hover:text-gray-900">Home</a>
+        <a href="{% url 'packs' %}" class="text-gray-600 hover:text-gray-900">Packages</a>
+        <a href="{% url 'blog'   %}" class="text-gray-600 hover:text-gray-900">Blog</a>
+        <a href="{% url 'contact'   %}" class="text-gray-600 hover:text-gray-900">Contact Us</a>
+        <a href="{% url 'costume'   %}" class="text-gray-600 hover:text-gray-900">Custom Package</a>
+        <a href="{% url 'summary'  %}">cart <span id="amount">{{ cart|length }}</span></a>
+
+        <form  method=POST  action="{% url 'search' %}">
+          {% csrf_token %}
+          <input type="search" placeholder="search" aria-label="search"   class="form-control mr-sm-2" name="searching">
+          <button type="submit">search</button>
+        </form>
+
+      </div>
+  
+    </nav>
+    
+
+
+
+
+
+
+
+
+     
+
+
+
+  </body>
+</html> --> 
+<!--
+<!DOCTYPE html>
+
+<html data-wf-page="5ed1cf34bf802c19af9f8168" data-wf-site="5ed1cf34bf802c5f339f8167" >
+
+<head>
+  <meta charset="utf-8" />
+  <title>Omnia</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Webflow" name="generator" />
+  <link rel="stylesheet" href="{% static 'webflow-style.css' %}" />
+ 
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    WebFont.load({ google: { families: ["Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"] } });
+  </script>
+  <script src="https://use.typekit.net/iyv4mdw.js" type="text/javascript"></script>
+ 
+ 
+
+</head>
+
+<body >
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" data-easing="ease"
+    data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="conatiner navbar_container">
+      <a href="../index.html" class="brand w-nav-brand">
+        <img
+          src="https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed470098a3127c849761c7a_TravelTell_White_Logo.png"
+          width="111" alt="" sizes="(max-width: 479px) 23vw, (max-width: 767px) 19vw, 111px" srcset="
+                            https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed470098a3127c849761c7a_TravelTell_White_Logo-p-500.png  500w,
+                            https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed470098a3127c849761c7a_TravelTell_White_Logo-p-800.png  800w,
+                            https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed470098a3127c849761c7a_TravelTell_White_Logo.png       1034w
+                        " class="light_logo inital-hide" />
+        <img
+          src="https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed472c3a90a9c93ed22d1e1_TravelTell_Dark_Logo.png"
+          width="111" alt="" sizes="(max-width: 479px) 27vw, (max-width: 767px) 21vw, 111px" srcset="
+                            https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed472c3a90a9c93ed22d1e1_TravelTell_Dark_Logo-p-500.png  500w,
+                            https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed472c3a90a9c93ed22d1e1_TravelTell_Dark_Logo-p-800.png  800w,
+                            https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ed472c3a90a9c93ed22d1e1_TravelTell_Dark_Logo.png       1034w
+                        " class="dark-logo initial-show" />
+      </a>
+      <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="modal" data-wf-cart-query=""
+  class="w-commerce-commercecartwrapper cart">
+        <a href="{% url 'summary'  %}" data-node-type="commerce-cart-open-link"
+          class="w-commerce-commercecartopenlink cart-button transparent-bg w-inline-block" role="button"
+          aria-haspopup="dialog" aria-label="Open cart">
+          <svg class="w-commerce-commercecartopenlinkicon icon" width="17px" height="17px" viewBox="0 0 17 17">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path
+                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                fill="currentColor" fill-rule="nonzero"></path>
+            </g>
+          </svg>
+          <div
+            
+            class="w-commerce-commercecartopenlinkcount cart-quantity">
+            <span id="amount" >{{ cart|length }}</span>
+          </div>
+        </a>
+        <div data-node-type="commerce-cart-container-wrapper" style="display: none;"
+          class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal">-->
+          <!-- <div data-node-type="commerce-cart-container" role="dialog"
+            class="w-commerce-commercecartcontainer cart-container"> -->
+            <!-- <div class="w-commerce-commercecartheader">
+              <!-- <h4 class="w-commerce-commercecartheading">Your Cart</h4> -->
+              <!-- <a href="full-travel-pack#" data-node-type="commerce-cart-close-link"
+                class="w-commerce-commercecartcloselink w-inline-block" role="button" aria-label="Close cart">
+                <svg width="16px" height="16px" viewBox="0 0 16 16">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g fill-rule="nonzero" fill="#333333">
+                      <polygon
+                        points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8">
+                      </polygon>
+                    </g>
+                  </g>
+                </svg>
+              </a> 
+            </div> -->
+           <!--  <div class="w-commerce-commercecartformwrapper">
+              <form data-node-type="commerce-cart-form" style="display: none;" class="w-commerce-commercecartform">
+                <script type="text/x-wf-template" id="wf-template-337cc18e-6afd-ca42-4732-3fbeb9aff681">
+                                        %3Cdiv%20class%3D%22w-commerce-commercecartitem%22%3E%3Cimg%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20src%3D%22%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePrice%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522price%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.price%2522%257D%257D%255D%22%3E%24%C2%A00.00%C2%A0USD%3C%2Fdiv%3E%3Cscript%20type%3D%22text%2Fx-wf-template%22%20id%3D%22wf-template-337cc18e-6afd-ca42-4732-3fbeb9aff687%22%3E%253Cli%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522PlainText%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D.name%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253Cspan%253E%253A%2520%253C%252Fspan%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522CommercePropValues%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253C%252Fli%253E%3C%2Fscript%3E%3Cul%20data-wf-bindings%3D%22%255B%257B%2522optionSets%2522%253A%257B%2522type%2522%253A%2522CommercePropTable%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%5B%5D%2522%257D%257D%252C%257B%2522optionValues%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_sku_values_3dr%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3D%22database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%22%20data-wf-template-id%3D%22wf-template-337cc18e-6afd-ca42-4732-3fbeb9aff687%22%3E%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3C%2Ful%3E%3Ca%20href%3D%22%23%22%20role%3D%22%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%20aria-label%3D%22Remove%20item%20from%20cart%22%3E%3Cdiv%3ERemove%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cinput%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartquantity%20text-field%22%20required%3D%22%22%20pattern%3D%22%5E%5B0-9%5D%2B%24%22%20inputMode%3D%22numeric%22%20type%3D%22number%22%20name%3D%22quantity%22%20autoComplete%3D%22off%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E
+                                    </script>
+                <div class="w-commerce-commercecartlist cart-list" 
+>
+                  <div class="w-commerce-commercecartitem">
+                    <!-- <img
+                      data-wf-bindings="%5B%7B%22src%22%3A%7B%22type%22%3A%22ImageRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_main_image_4dr%22%7D%7D%5D"
+                      src="full-travel-pack" alt="" class="w-commerce-commercecartitemimage w-dyn-bind-empty" /> -->
+                    <!-- <div class="w-commerce-commercecartiteminfo"> -->
+                      <!-- <div
+                        data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_name_%22%7D%7D%5D"
+                        class="w-commerce-commercecartproductname w-dyn-bind-empty"></div> -->
+                     
+                        
+                      <!-- <ul
+                        data-wf-bindings="%5B%7B%22optionSets%22%3A%7B%22type%22%3A%22CommercePropTable%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr[]%22%7D%7D%2C%7B%22optionValues%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_sku_values_3dr%22%7D%7D%5D"
+                        class="w-commerce-commercecartoptionlist"
+                        data-wf-collection="database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr"
+                        data-wf-template-id="wf-template-337cc18e-6afd-ca42-4732-3fbeb9aff687">
+                        <li>
+                          <span
+                            data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D.name%22%7D%7D%5D"
+                            class="w-dyn-bind-empty"></span>
+                          <span>: </span>
+                          <span
+                            data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D%22%7D%7D%5D"
+                            class="w-dyn-bind-empty"></span>
+                        </li>
+                      </ul> -->
+                     
+<!--                        
+                      </a>
+                    </div>
+                
+                  </div>
+                </div>
+                <div class="w-commerce-commercecartfooter">
+                  <div aria-live="" aria-atomic="false" class="w-commerce-commercecartlineitem">
+                    <div>Subtotal</div>
+                    <div
+                      data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.subtotal%22%7D%7D%5D"
+                      class="w-commerce-commercecartordervalue"></div>
+                  </div>
+                  <div>
+                    <div data-node-type="commerce-cart-quick-checkout-actions" style="display: none;">
+                      <a role="button" aria-haspopup="dialog" aria-label="Apple Pay"
+                        data-node-type="commerce-cart-apple-pay-button"
+                        style="background-image: -webkit-named-image(apple-pay-logo-white); background-size: 100% 50%; background-position: 50% 50%; background-repeat: no-repeat;"
+                        class="w-commerce-commercecartapplepaybutton" tabindex="0">
+                        <div></div>
+                      </a>
+                      <a role="button" tabindex="0" aria-haspopup="dialog"
+                        data-node-type="commerce-cart-quick-checkout-button" style="display: none;"
+                        class="w-commerce-commercecartquickcheckoutbutton">
+                        <svg class="w-commerce-commercequickcheckoutgoogleicon" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                          <defs>
+                            <polygon id="google-mark-a" points="0 .329 3.494 .329 3.494 7.649 0 7.649"></polygon>
+                            <polygon id="google-mark-c" points=".894 0 13.169 0 13.169 6.443 .894 6.443"></polygon>
+                          </defs>
+                          <g fill="none" fill-rule="evenodd">
+                            <path fill="#4285F4"
+                              d="M10.5967,12.0469 L10.5967,14.0649 L13.1167,14.0649 C14.6047,12.6759 15.4577,10.6209 15.4577,8.1779 C15.4577,7.6339 15.4137,7.0889 15.3257,6.5559 L7.8887,6.5559 L7.8887,9.6329 L12.1507,9.6329 C11.9767,10.6119 11.4147,11.4899 10.5967,12.0469">
+                            </path>
+                            <path fill="#34A853"
+                              d="M7.8887,16 C10.0137,16 11.8107,15.289 13.1147,14.067 C13.1147,14.066 13.1157,14.065 13.1167,14.064 L10.5967,12.047 C10.5877,12.053 10.5807,12.061 10.5727,12.067 C9.8607,12.556 8.9507,12.833 7.8887,12.833 C5.8577,12.833 4.1387,11.457 3.4937,9.605 L0.8747,9.605 L0.8747,11.648 C2.2197,14.319 4.9287,16 7.8887,16">
+                            </path>
+                            <g transform="translate(0 4)">
+                              <mask id="google-mark-b" fill="#fff">
+                                <use xlink:href="#google-mark-a"></use>
+                              </mask>
+                              <path fill="#FBBC04"
+                                d="M3.4639,5.5337 C3.1369,4.5477 3.1359,3.4727 3.4609,2.4757 L3.4639,2.4777 C3.4679,2.4657 3.4749,2.4547 3.4789,2.4427 L3.4939,0.3287 L0.8939,0.3287 C0.8799,0.3577 0.8599,0.3827 0.8459,0.4117 C-0.2821,2.6667 -0.2821,5.3337 0.8459,7.5887 L0.8459,7.5997 C0.8549,7.6167 0.8659,7.6317 0.8749,7.6487 L3.4939,5.6057 C3.4849,5.5807 3.4729,5.5587 3.4639,5.5337"
+                                mask="url(#google-mark-b)"></path>
+                            </g>
+                            <mask id="google-mark-d" fill="#fff">
+                              <use xlink:href="#google-mark-c"></use>
+                            </mask>
+                            <path fill="#EA4335"
+                              d="M0.894,4.3291 L3.478,6.4431 C4.113,4.5611 5.843,3.1671 7.889,3.1671 C9.018,3.1451 10.102,3.5781 10.912,4.3671 L13.169,2.0781 C11.733,0.7231 9.85,-0.0219 7.889,0.0001 C4.941,0.0001 2.245,1.6791 0.894,4.3291"
+                              mask="url(#google-mark-d)"></path>
+                          </g>
+                        </svg>
+                        <svg class="w-commerce-commercequickcheckoutmicrosofticon" xmlns="http://www.w3.org/2000/svg"
+                          width="16" height="16" viewBox="0 0 16 16">
+                          <g fill="none" fill-rule="evenodd">
+                            <polygon fill="#F05022" points="7 7 1 7 1 1 7 1"></polygon>
+                            <polygon fill="#7DB902" points="15 7 9 7 9 1 15 1"></polygon>
+                            <polygon fill="#00A4EE" points="7 15 1 15 1 9 7 9"></polygon>
+                            <polygon fill="#FFB700" points="15 15 9 15 9 9 15 9"></polygon>
+                          </g>
+                        </svg>
+                        <div>Pay with browser.</div>
+                      </a>
+                    </div>
+                    <a href="../checkout" value="Continue to Checkout" data-node-type="cart-checkout-button"
+                      class="w-commerce-commercecartcheckoutbutton button" data-loading-text="Hang Tight...">
+                      Continue to Checkout
+                    </a>
+                  </div>
+                </div>
+              </form> -->
+              <!-- <div class="w-commerce-commercecartemptystate empty-state"> -->
+                <!-- <div>You have no items in your cart.</div>
+                <a href="../shop" class="button w-button">Shop Now</a>
+              </div> 
+              <div aria-live="" style="display: none;" data-node-type="commerce-cart-error"
+                class="w-commerce-commercecarterrorstate">
+                
+              </div> 
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="right_side_navbar">
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <div>
+            <div data-hover="true" data-delay="0" data-w-id="48b6faf8-8913-a186-b53d-775a0dde136e"
+              class="dropdown w-dropdown">
+              <div class="dropdown-toggle w-dropdown-toggle">
+                <div class="nav_link_text">Explore</div>
+                <div class="nav_link_hover_div"></div>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <a href="{% url 'blog'   %}" aria-current="page" class="nav_link dropdown w-inline-block w--current">
+                  <div class="nav_link_text">Blog</div>
+                 
+                </a>
+               
+                <a href="{% url 'costume'   %}"aria-current="page" class="nav_link dropdown w-inline-block w--current"> <div class="nav_link_text">custom packages</div></a>
+                 
+                </a>
+              </nav>
+            </div>
+            <a href="{% url 'blog'   %}" class="nav_link mobile-nav w-nav-link">Blog</a><a href="{% url 'costume'   %}"
+              class="nav_link mobile-nav w-nav-link">custom packages</a>
+            <a href="{% url 'packs' %}"
+              class="nav_link w-nav-link">Packages</a>
+            <a href="{% url 'contact'   %}" class="nav_link w-nav-link">Contact</a><a href="../sign-in.html"
+              class="nav_link mobile-nav w-nav-link">Sign In</a>
+           
+          </div>
+        </nav>
+        <!-- <div class="sign_in_up_wrap"><a href="../sign-in.html" class="nav_link w-nav-link">Sign In</a><a href="../sign-up.html"
+            class="button navbar_btn w-button">Become a TravelTeller</a></div> -->
+      <!-- </div>
+      <div class="menu-button w-nav-button"><img
+          src="https://assets.website-files.com/5ed1cf34bf802c5f339f8167/5ee748ec18269a218140b184_hamburger.svg"
+          width="30" alt="" /></div>
+    </div>
+  </div>
+<br>
+<script src="{% static 'jquery.js' %}" ></script>
+<script src="{% static 'webflow-script.js' %}" ></script>
+</body>
+          
+<script>
+
+  $(document).on('click','#add_cart',function (e) {
+    e.preventDefault();
+    $.ajax({
+  
+        type:'POST',
+        url:'{% url "add"  %}',
+        data:{
+  
+          package_id:$('#add_cart').val(),
+          package_amount:$('#no_adults option:selected').text(),
+          csrfmiddlewaretoken:'{{ csrf_token  }}',
+          action:'post'
+  
+          
+  
+        },
+        success:function (json) {
+          console.log(json)
+          document.getElementById("amount").textContent=json.amount
+          
+        },
+        error:function (xhr,errmsg,err) {
+          
+        }
+  
+    });
+  
+  
+  
+  
+  
+  
+  })
+  
+  
+  </script>  
+  
+  
+
+
+</html> --> 
+
+<!DOCTYPE html>
+<html data-wf-page="5ed1cf34bf802c19af9f8168" data-wf-site="5ed1cf34bf802c5f339f8167">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="here is my website">
+<head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'webflow-style.css' %}" />
+<style>
+    @media (min-width:992px) {
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="1b062139-faad-fee2-c02a-b49d1260ff8f"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="63335641-77b7-2165-c2c2-35dd0df72ec7"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="c37d1e11-495d-e825-2cec-4af2927ec093"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="765215f1-1497-d971-58e3-e619476c727a"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="6f8a05ad-fbdc-08c0-7ff1-2a5ae3823967"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="4762d817-fbdf-2d04-25c4-4c577c7357b6"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="981020ba-d567-d915-cbd1-8a938b4b546d"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="39285704-a621-d710-7503-81cf37fd55dc"] {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width:991px) and (min-width:768px) {
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="1b062139-faad-fee2-c02a-b49d1260ff8f"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="63335641-77b7-2165-c2c2-35dd0df72ec7"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="c37d1e11-495d-e825-2cec-4af2927ec093"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="765215f1-1497-d971-58e3-e619476c727a"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="6f8a05ad-fbdc-08c0-7ff1-2a5ae3823967"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="4762d817-fbdf-2d04-25c4-4c577c7357b6"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="981020ba-d567-d915-cbd1-8a938b4b546d"] {
+        opacity: 0;
+      }
+
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="39285704-a621-d710-7503-81cf37fd55dc"] {
+        opacity: 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div data-collapse="medium" data-animation="default" data-duration="400"
+    data-w-id="436cb2e2-12df-b291-5268-da919d749944" data-easing="ease" data-easing2="ease" role="banner"
+    class="navbar w-nav">
+    <div class="conatiner navbar_container"><a href="/" aria-current="page" class="w-nav-brand w--current">
+      <img
+          src="../../media/traveltell_white_logo-p-500.png" width="111" alt=""
+          sizes="(max-width: 479px) 27vw, (max-width: 767px) 88.796875px, 111px"
+          srcset="../../media//traveltell_white_logo-p-500.png 500w, ../../media//traveltell_white_logo-p-800.png 800w, ../../media//traveltell_white_logo.png 1034w"
+          class="light_logo on-home-page" /><img src="../../media//traveltell_dark_logo.png" width="111" alt=""
+          sizes="(max-width: 479px) 30vw, (max-width: 767px) 96.796875px, 111px"
+          srcset="../../../../media//traveltell_dark_logo-p-500.png 500w, ../../media//traveltell_dark_logo-p-800.png 800w, ../../media//traveltell_dark_logo.png 1034w"
+          class="dark-logo on-home-page" /></a>
+      <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="modal"  data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart-2">
+        <a href="{% url 'summary'  %}"
+          data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink cart-button w-inline-block"
+          role="button" aria-haspopup="dialog" aria-label="Open cart">
+          <svg
+            class="w-commerce-commercecartopenlinkicon icon white" width="17px" height="17px" viewBox="0 0 17 17">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path
+                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                fill="currentColor" fill-rule="nonzero"></path>
+            </g>
+          </svg>
+          <div
+            data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItemsCount%22%7D%7D%5D"
+            class="w-commerce-commercecartopenlinkcount cart-quantity white_text" id="amount">{{ cart|length }}</div>
+        </a>
+        
+      </div>
+      <div class="right_side_navbar">
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <div data-hover="true" data-delay="0" data-w-id="2e6fef04-d72e-60b4-fec4-beb74b63bd13"
+            class="dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="nav_link_text">Explore</div>
+              <div class="nav_link_hover_div"></div>
+            </div>
+             <nav class="dropdown-list w-dropdown-list"><a href="{% url 'blog'   %}" class="nav_link dropdown w-inline-block">
+                <div class="nav_link_text">Blogs</div>
+              </a><a href="{% url 'about'   %}" class="nav_link dropdown w-inline-block">
+                <div class="nav_link_text">About</div>
+              </a>
+             
+              <a href="{% url 'costume'   %}" class="nav_link dropdown w-inline-block">
+                <div class="nav_link_text">Special Packages</div>
+              </a></nav> 
+          </div><a href="{% url 'blog'   %}" class="nav_link mobile-nav w-nav-link">Blogs</a><a href="{% url 'about'   %}"
+            class="nav_link mobile-nav w-nav-link">About</a>
+            <a href="{% url 'packs'   %}"
+            class="nav_link w-nav-link">Packages</a>
+            <a href="{% url 'costume'   %}" class="nav_link mobile-nav w-nav-link">Special Packages</a><a
+            href="{% url 'contact'   %}" class="nav_link w-nav-link">Contact</a><a href="/sign-in"
+            class="nav_link mobile-nav w-nav-link">Sign In</a>
+        </nav>
+        <div class="sign_in_up_wrap"><a href="{% url 'login'   %}" class="nav_link w-nav-link">Sign In</a></div>
+        <div class="menu-button w-nav-button"><img src="../../media//hamburger.svg" width="30" alt="" class="image-9" /></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="{% static 'jquery.js' %}" ></script>
+<script src="{% static 'webflow-script.js' %}" ></script>
+
+<script>
+
+  $(document).on('click','#add_cart',function (e) {
+    e.preventDefault();
+    $.ajax({
+  
+        type:'POST',
+        url:'{% url "add"  %}',
+        data:{
+  
+          package_id:$('#add_cart').val(),
+          package_amount:$('#no_adults option:selected').text(),
+          csrfmiddlewaretoken:'{{ csrf_token  }}',
+          action:'post'
+  
+          
+  
+        },
+        success:function (json) {
+          console.log(json)
+          document.getElementById("amount").textContent=json.amount
+          
+        },
+        error:function (xhr,errmsg,err) {
+          
+        }
+  
+    });
+  
+  
+  
+  
+  
+  
+  })
+  
+  
+  </script>  
+  

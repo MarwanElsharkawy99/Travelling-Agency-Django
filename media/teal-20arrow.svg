@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="19px" viewBox="0 0 30 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Teal arrow</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <path d="M3,17 L15.464189,3.82109024 C15.8436813,3.41983713 16.4766005,3.4021965 16.8778536,3.78168878 C16.9074193,3.80965111 16.9352506,3.8393921 16.9611923,3.87074584 L27,16.0039137 L27,16.0039137" id="Teal-arrow" stroke="#03C1D6" stroke-width="5" transform="translate(15.000000, 10.000000) rotate(180.000000) translate(-15.000000, -10.000000) "></path>
+    </g>
+</svg>

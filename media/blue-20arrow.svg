@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="30px" viewBox="0 0 22 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>blue arrow</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <path d="M0,21 L12.464189,7.82109024 C12.8436813,7.41983713 13.4766005,7.4021965 13.8778536,7.78168878 C13.9074193,7.80965111 13.9352506,7.8393921 13.9611923,7.87074584 L24,20.0039137 L24,20.0039137" id="blue-arrow" stroke="#2547F6" stroke-width="5" transform="translate(12.000000, 14.000000) rotate(80.000000) translate(-12.000000, -14.000000) "></path>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+   
+    <title>Details</title>
+  </head>
+
+  {% include 'navbar.html' %}
+  <body>
+    ,,,,,,,
+    <div class="popular_grid" style="margin: 2rem">
+      <h1 style="margin-bottom: 2rem">{{pack_item.name}}</h1>
+      <img src="{{blog_item.img.url}}" alt="{{x.name}}" />
+
+      <h2>Description:</h2>
+      <p>{{blog_item.blog_content }}</p>
+    </div>
+  </body>
+  {% include 'footer.html' %}
+</html>

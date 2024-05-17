@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+</head>
+{% include 'navbar.html' %}
+<body>
+    {% if cart_package   %}
+    {% for i in cart_package %}
+    <div style="margin: 1rem;">
+    {{i.name}}
+    {{i.price}}
+    {{i.description}}
+       <select id="s{{i.id}}">
+        <option selected >{%for key,value in adults_num.items %}
+            {%if key == i.id|slugify%}
+            {{value}}
+            {%endif%}
+
+            {%endfor%}
+
+
+
+
+
+
+        </option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <button type="button" data-index="{{i.id}}" class="update_cart">Update</button>
+    <button type="button" data-index="{{i.id}}" class="delete_pack">Remove</button>
+  
+</div>
+    {%endfor%}
+  
+    {% else %}
+    <h2>There is No  Packages In The Cart</h2>
+    {%endif%}
+
+    <strong>TOTAL:{{total}}</strong>
+
+
+</body>
+</html>
+
+
+<script>
+
+    $(document).on('click','.update_cart',function (e) {
+      e.preventDefault();
+
+      var id =$(this).data('index');
+      console.log(id)
+      $.ajax({
+    
+          type:'POST',
+          url:'{% url "update"  %}',
+          data:{
+    
+            package_id:$(this).data('index'),
+            package_amounts:$('#s'+ id+' option:selected').text(),
+            csrfmiddlewaretoken:'{{ csrf_token  }}',
+            action:'post'
+    
+            
+    
+          },
+          success:function (json) {
+            console.log(json)
+            // document.getElementById("amount").textContent=json.amount
+            location.reload();
+          },
+          error:function (xhr,errmsg,err) {
+            
+          }
+    
+      });
+    
+    
+    
+    
+    
+    
+    })
+    
+    
+    </script>  
+
+
+
+
+
+
+
+
+<script>
+
+    $(document).on('click','.delete_pack',function (e) {
+      e.preventDefault();
+
+     // var id =$(this).data('index');
+    //  console.log(id)
+      $.ajax({
+    
+          type:'POST',
+          url:'{% url "delete"  %}',
+          data:{
+    
+            package_id:$(this).data('index'),
+           
+            csrfmiddlewaretoken:'{{ csrf_token  }}',
+            action:'post'
+    
+            
+    
+          },
+          success:function (json) {
+            console.log(json)
+            // document.getElementById("amount").textContent=json.amount
+            location.reload();
+          },
+          error:function (xhr,errmsg,err) {
+            
+          }
+    
+      });
+    
+    
+    
+    
+    
+    
+    })
+    
+    
+    </script>  
+
+    

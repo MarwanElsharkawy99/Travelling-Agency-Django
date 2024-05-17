@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'details.css' %}" />
+    <title>Details</title>
+  </head>
+
+  {% include 'navbar.html' %}
+  <body>
+    <div class="popular_grid" style="margin: 2rem">
+      <h1 style="margin-bottom: 2rem">{{pack_item.name}}</h1>
+      <img src="{{pack_item.img.url}}" alt="{{x.name}}" />
+
+      <h2>price:{{pack_item.price}}</h2>
+      <h2>Description:</h2>
+      <p>{{pack_item.description}}</p>
+      <h2>From: &nbsp; {{pack_item.dest_from}}</h2>
+      <h2>TO: &nbsp; {{pack_item.dest_to}}</h2>
+      <select id="no_adults">
+        
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+
+      <button  type="button" value="{{pack_item.id}}" id="add_cart">Add To Cart</button>
+    </div>
+    
+ 
+  </body>
+
+<script>
+
+$(document).on('click','#add_cart',function (e) {
+  e.preventDefault();
+  $.ajax({
+
+      type:'POST',
+      url:'{% url "add"  %}',
+      data:{
+
+        package_id:$('#add_cart').val(),
+        package_amount:$('#no_adults option:selected').text(),
+        csrfmiddlewaretoken:'{{ csrf_token  }}',
+        action:'post'
+
+        
+
+      },
+      success:function (json) {
+        console.log(json)
+        document.getElementById("amount").textContent=json.amount
+        
+      },
+      error:function (xhr,errmsg,err) {
+        
+      }
+
+  });
+
+
+
+
+
+
+})
+
+
+</script>  
+
+
+
+  {% include 'footer.html' %}
+</html>
