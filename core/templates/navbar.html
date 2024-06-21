@@ -12,9 +12,10 @@
   <body>
      <!-- <nav>
       
-      <div><a href="{% url 'home' %}">Omania</a></div>
+      <div><a href="{% url 'index' %}">Omania</a></div>
       <ul >
-        <li class="link"><a href="{% url 'home' %}">Home</a></li>
+        <li class="link"><a href="{% url 'index' %}">Home</a></li>
+
         <li class="link"><a href="{% url 'packs' %}">packages</a></li>
         <li class="link"><a href="{% url 'blog'   %}">Blog</a></li>
         <li class="link"><a href="#">Contact Us</a></li>
@@ -32,7 +33,7 @@
 
     <nav class="bg-white shadow">
       <div class="logo-container">
-        <div><a href="{% url 'home' %}"><h2>Omania</h2></a></div>
+        <div><a href="{% url 'index' %}"><h2>Omania</h2></a></div>
       </div>
       <div class="menu-toggle" id="mobile-menu">
         <span class="bar"></span>
@@ -40,7 +41,7 @@
         <span class="bar"></span>
       </div>
       <div class="links-container">
-        <a href="{% url 'home' %}" class="text-gray-600 hover:text-gray-900">Home</a>
+        <a href="{% url 'index' %}" class="text-gray-600 hover:text-gray-900">Home</a>
         <a href="{% url 'packs' %}" class="text-gray-600 hover:text-gray-900">Packages</a>
         <a href="{% url 'blog'   %}" class="text-gray-600 hover:text-gray-900">Blog</a>
         <a href="{% url 'contact'   %}" class="text-gray-600 hover:text-gray-900">Contact Us</a>
