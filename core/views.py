@@ -14,7 +14,7 @@ def index(request):
     current_user=request.user
     pack=package.objects.all()[:3]
 
-    return render(request, 'traveltell.webflow.io\\index.html',{'pack':pack,'user':current_user}
+    return render(request, 'index.html',{'pack':pack,'user':current_user}
        
     )
     
@@ -22,13 +22,13 @@ def packages(request):
     
     packags=package.objects.all()
     
-    return render(request,'traveltell.webflow.io\\shop.html',{'packages':packags})
+    return render(request,'shop.html',{'packages':packags})
     
     
     
 def show_blog(request):
     blogs=blog.objects.all()
-    return render(request,"traveltell.webflow.io\\blog.html",{'blog_item':blogs})
+    return render(request,"blog.html",{'blog_item':blogs})
 
 
 def details(request,id):
@@ -36,12 +36,12 @@ def details(request,id):
     
     days = package_details.day.all()
     hotels=package_details.hotel.all()
-    return render(request,'traveltell.webflow.io\\packages.html',{"pack_item":package_details,'day':days,'hotels':hotels})
+    return render(request,'packages.html',{"pack_item":package_details,'day':days,'hotels':hotels})
 
 def blog_details(request,id):
     blog_details=get_object_or_404(blog,pk=id)
     
-    return render(request,'traveltell.webflow.io\\blog_details.html',{"blog_item":blog_details})
+    return render(request,'blog_details.html',{"blog_item":blog_details})
 
 
 
