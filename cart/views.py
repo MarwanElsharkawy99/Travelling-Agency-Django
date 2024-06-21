@@ -1,7 +1,13 @@
+
 from django.shortcuts import render,get_object_or_404
 from .cart import Cart
 from core.models import package
 from django.http import JsonResponse
+from paypal.standard.forms import PayPalPaymentsForm
+from django.conf import settings
+import uuid
+from django.urls import reverse
+
 
 
 def cart_summary(request):
@@ -9,7 +15,26 @@ def cart_summary(request):
     cart_packages=cart.getpack
     adults_num=cart.getamount
     totals=cart.totals()
-    return render(request,'checkout.html',{'cart_package':cart_packages,'adults_num':adults_num,'total':totals})
+    host =request.get_host()
+    print(host)
+    paypal_checkout={
+        'business':settings.PAYPAL_RECEIVER_EMAIL,
+        'amount':totals,
+        'item_name':cart_packages,
+        'invoice':uuid.uuid4(),
+        'currency_code':'USD',
+        'notify_url':f'http://{host}{reverse('paypal-ipn')}',
+        'return_url': f"http://{host}{reverse('payment-success')}",
+        'cancel_url': f"http://{host}{reverse('payment-failed')}",
+
+
+    }
+    paypal_payment = PayPalPaymentsForm(initial=paypal_checkout)
+    context={
+        'product':cart_packages,
+        'paypal':paypal_payment
+    }
+    return render(request,'checkout.html',{'cart_package':cart_packages,'adults_num':adults_num,'total':totals,'context':context})
 def cart_add(request):
    
     cart=Cart(request)
@@ -50,3 +75,17 @@ def cart_update(request):
         response=JsonResponse({'amount':adult_no})
         return response
         # return redirect('summary.html')
+
+
+
+def PaymentSuccessful(request):
+
+     
+
+        return render(request, 'payment-success.html')
+
+def paymentFailed(request):
+
+       
+
+        return render(request, 'payment-failed.html')

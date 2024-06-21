@@ -1,8 +1,4 @@
-/* Generated on: Mon Apr 11 2022 07:10:53 GMT+0000 (Coordinated Universal Time) */
-/* ==========================================================================
-   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
-   ========================================================================== */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type='checkbox'],input[type='radio']{box-sizing:border-box;padding:0}input[type='number']::-webkit-inner-spin-button,input[type='number']::-webkit-outer-spin-button{height:auto}input[type='search']{-webkit-appearance:none}input[type='search']::-webkit-search-cancel-button,input[type='search']::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
 
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
@@ -3228,7 +3224,7 @@ a:focus {
   right: 0%;
   bottom: 0%;
   width: auto;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3347,7 +3343,7 @@ a:focus {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   -webkit-transition: all 3000ms cubic-bezier(.25, .1, .696, .418);
@@ -3656,7 +3652,7 @@ a:focus {
   -ms-flex: 1;
   flex: 1;
   border-radius: 4px;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3692,7 +3688,7 @@ a:focus {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   text-decoration: none;
@@ -3764,7 +3760,7 @@ a:focus {
   height: 30px;
   margin-right: 10px;
   border-radius: 50%;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: 1px 1px 13px 0 rgba(0, 0, 0, 0.1);
@@ -3950,7 +3946,7 @@ a:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../images/gaddafi-rusli-2ueunl4ckv8-unsplash-20-1-.jpg");
+  background-image: url("../media/gaddafi-rusli-2ueunl4ckv8-unsplash-20-1-.jpg");
   background-position: 0% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -4087,7 +4083,7 @@ a:focus {
   width: 370px;
   height: 300px;
   border-radius: 4px;
-  background-image: url("../images/christopher-alvarenga-iibrzfgcm10-unsplash.jpg");
+  background-image: url("../media/christopher-alvarenga-iibrzfgcm10-unsplash.jpg");
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: 1px 1px 18px 0 rgba(0, 0, 0, 0.12);
@@ -4104,7 +4100,7 @@ a:focus {
   height: 200px;
   margin-right: 0px;
   margin-left: -6px;
-  background-image: url("../images/jeshoots-com-mseswdmzr-a-unsplash.jpg");
+  background-image: url("../media/jeshoots-com-mseswdmzr-a-unsplash.jpg");
 }
 
 .parallex_image._3 {
@@ -4116,7 +4112,7 @@ a:focus {
   z-index: 2;
   width: 300px;
   height: 200px;
-  background-image: url("../images/atlas-green-hrrjixxrgfq-unsplash.jpg");
+  background-image: url("../media/atlas-green-hrrjixxrgfq-unsplash.jpg");
 }
 
 .parallex_image._4 {
@@ -4128,7 +4124,7 @@ a:focus {
   z-index: 3;
   width: 200px;
   height: 150px;
-  background-image: url("../images/averie-woodard-5d20kdvfcfa-unsplash.jpg");
+  background-image: url("../media/averie-woodard-5d20kdvfcfa-unsplash.jpg");
 }
 
 .copyrights_contain {
@@ -4344,10 +4340,11 @@ a:focus {
 }
 
 ._2_col_grid.product_grid {
+  
   padding-top: 30px;
   grid-column-gap: 10px;
   -ms-grid-columns: 1.75fr 1.25fr 0.75fr;
-  grid-template-columns: 1.75fr 1.25fr 0.75fr;
+  grid-template-columns: 5.5fr 0.2fr 0.1fr;
 }
 
 .category-collection-item-product-categories {
@@ -4544,7 +4541,7 @@ a:focus {
   width: 30%;
   height: 200px;
   border-radius: 3px;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -4956,7 +4953,7 @@ a:focus {
   height: 80px;
   margin-right: 14px;
   border-radius: 50%;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -5024,7 +5021,7 @@ a:focus {
   height: 60px;
   margin-right: 14px;
   border-radius: 50%;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -5203,18 +5200,18 @@ a:focus {
   right: 0%;
   bottom: 0%;
   z-index: 1;
-  background-image: url("../images/david-marcu-78a265wpio4-unsplash.jpg");
+  background-image: url("../media/david-marcu-78a265wpio4-unsplash.jpg");
   background-position: 50% 100%;
   background-size: cover;
 }
 
 .blog_hero_slide_image._3 {
-  background-image: url("../images/joel-de-vriend-xdzvq0_bwys-unsplash.jpg");
+  background-image: url("../media/joel-de-vriend-xdzvq0_bwys-unsplash.jpg");
   background-position: 50% 0%;
 }
 
 .blog_hero_slide_image._2 {
-  background-image: url("../images/edgar-chaparro-6ccjq5qpfvy-unsplash.jpg");
+  background-image: url("../media/edgar-chaparro-6ccjq5qpfvy-unsplash.jpg");
   background-position: 50% 50%;
 }
 
@@ -5546,7 +5543,7 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 6px;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -5664,7 +5661,7 @@ a:focus {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   opacity: 0;
@@ -5712,7 +5709,7 @@ a:focus {
   bottom: 0%;
   width: 100%;
   height: 500px;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -5725,7 +5722,7 @@ a:focus {
   right: 0%;
   bottom: 0%;
   border-radius: 6px;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: scroll;
@@ -5948,7 +5945,7 @@ a:focus {
   width: 100%;
   height: 600px;
   border-radius: 4px;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.06);
@@ -6462,7 +6459,7 @@ a:focus {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  background-image: url("../images/background-image.svg");
+  background-image: url("../media/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -9285,28 +9282,28 @@ a:focus {
 }
 @font-face {
   font-family: 'Gothambook';
-  src: url('../images/gothambook.ttf') format('truetype');
+  src: url('../media/gothambook.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Iciel gotham ultra';
-  src: url('../images/iciel-20gotham-ultra.ttf') format('truetype');
+  src: url('../media/iciel-20gotham-ultra.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../images/gotham-bold.otf') format('opentype');
+  src: url('../media/gotham-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../images/gotham-black.otf') format('opentype');
+  src: url('../media/gotham-black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
   font-display: auto;

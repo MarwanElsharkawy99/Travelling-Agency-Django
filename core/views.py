@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib.auth.decorators import login_required
 
-from core.models import package,blog
+from core.models import  Day, package,blog
 from .form import ContactForm
 from django.template.loader import render_to_string
 from django.core.mail import send_mail
@@ -34,7 +34,9 @@ def show_blog(request):
 def details(request,id):
     package_details=get_object_or_404(package,pk=id)
     
-    return render(request,'traveltell.webflow.io\\packages.html',{"pack_item":package_details})
+    days = package_details.day.all()
+    hotels=package_details.hotel.all()
+    return render(request,'traveltell.webflow.io\\packages.html',{"pack_item":package_details,'day':days,'hotels':hotels})
 
 def blog_details(request,id):
     blog_details=get_object_or_404(blog,pk=id)
@@ -88,3 +90,6 @@ def search(request):
 
 def about(request):
     return render(request,'about.html')
+
+def whatsapp(request):
+    return render(request,'whatsapp')

@@ -35,6 +35,17 @@
 
       <button  type="button" value="{{pack_item.id}}" id="add_cart">Add To Cart</button>
     </div>
+
+
+    <ul>
+      {% for day in days %}
+          <li>
+              <h3>Day {{ day.day_number }}: {{ day.title }}</h3>
+              <p>{{ day.description }}</p>
+          </li>
+      {% endfor %}
+      </ul>
+
     
  
   </body>

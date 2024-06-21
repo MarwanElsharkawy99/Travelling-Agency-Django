@@ -1,0 +1,7 @@
+
+<a href="https://wa.me/+201026957222?text=I'm%20interested%20in%20your%20Package%20for%20sale">
+    {% load static %}
+
+<img src="../../media/logo.png"   width="60px"/>
+
+</a>
