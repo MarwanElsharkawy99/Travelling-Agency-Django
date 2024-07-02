@@ -150,4 +150,4 @@ PAYPAL_TEST=True
 SECURE_SSL_REDIRECT = False
 APPEND_SLASH=True
 SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
-
+AUTH_USER_MODEL='userauth.customUser'

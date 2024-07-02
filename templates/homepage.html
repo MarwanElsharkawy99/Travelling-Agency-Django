@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% load static %}
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+
+    />
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'index.css' %}" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header start -->
+      <header class="header">
+        <div class="ncontainer">
+          <div class="row v-center">
+            <div class="header-item item-left">
+              <div class="logo">
+                <a href="#"
+                  ><img src="media\Logo Sizes-12.png" width="200px"
+                /></a>
+              </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+              <div class="menu-overlay"></div>
+              <nav class="menu">
+                <div class="mobile-menu-head"   >
+                  <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                  <div class="current-menu-title" ></div>
+                  <div class="mobile-menu-close">&times;xx</div>
+                </div>
+                <ul class="menu-main">
+                  <li>
+                    <a href="#" >Home</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#" >About Us </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#" >Our Service <i class="fa fa-angle-down"></i></a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      <div class="list-item">
+                        <ul>
+                          <li>
+                            <a href="#">Destination Egyptologist Guide</a>
+                          </li>
+                          <li><a href="#">Packages</a></li>
+                          <li><a href="#">Nile Cruises</a></li>
+                          <li><a href="#">Tours & Activities</a></li>
+                          <li><a href="#">Transfers</a></li>
+                        </ul>
+
+                        <ul>
+                          <li><a href="#">Airport Meet & Assets</a></li>
+                          <li><a href="#">Air Flight Tickets </a></li>
+                          <li><a href="#">Visa Services</a></li>
+                        </ul>
+                      </div>
+                      <div class="list-item">
+                        <ul>
+                          <li><a href="#">Internal Transfers Services</a></li>
+                          <li>
+                            <a href="#">Meetings & assist in airports </a>
+                          </li>
+                          <li><a href="#">Hotel accommodation</a></li>
+                          <li><a href="#">Therapeutic packages</a></li>
+                        </ul>
+
+                        <ul>
+                          <li><a href="#">Unique programs</a></li>
+                          <li><a href="#">Event Management</a></li>
+                          <li><a href="#">Luxury executive travel</a></li>
+                          <li><a href="#">Honey packages</a></li>
+                        </ul>
+                      </div>
+                      <div class="list-item">
+                        <ul>
+                          <li><a href="#">Religious Tourism</a></li>
+                          <li><a href="#">Cultural trips</a></li>
+                          <li><a href="#">Excursions</a></li>
+                          <li>
+                            <a href="#"
+                              >Combined trips ( 2 destinations or more )</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              >Variety excursions and unique programs</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              >Repairing sites for shooting movies scenes</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#"
+                      >Destinations <i class="fa fa-angle-down"></i
+                    ></a>
+                    <div class="sub-menu single-column-menu">
+                      <ul>
+                        <li><a href="#">Cairo</a></li>
+                        <li><a href="#">Hurghada</a></li>
+                        <li><a href="#">Marsa Alam</a></li>
+                        <li><a href="#">Sharm el Sheikh</a></li>
+                        <li><a href="#">Luxor</a></li>
+                        <li><a href="#">Aswan</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#"> Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" >Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+              <a href="#" ><i class="fa fa-search"></i></a>
+              
+              <a href="#" ><i class="fa fa-user"></i></a>
+              <div class="mobile-menu-trigger" >
+                <span style="color:black ;"></span>
+              </div>
+              
+             
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- end navbar -->
+      <div class="carouselHolder">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <img src="media\nnzng.jpg" class="d-block w-100 pix"  style="height: 40rem;"  alt="..." />
+              
+              <div class="carousel-caption d-none d-md-block" >
+                <h1 style="text-align: start">Welcome To Egypt</h1>
+               
+                <p
+                  style="
+                    text-align: start;
+                    width: 70%;
+                    font-size: 15px;
+                    font-weight: 600;
+                  "
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur viverra ante sollicitudin, mattis augue id,
+                  vulputate arcu. Etiam hendrerit faucibus pharetra.
+                </p>
+
+                <button style=" background-color: #ffffff; border-radius: 5px; width: 176px; height: 58px; border: none;  position: relative; left: 500px;
+                bottom: 60px;">sign-up</button>
+
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="homewrap">
+      <div class="about">
+        <h1 style="font-weight: bold">About Us</h1>
+        <p>
+          OMANIA offers you an impressive range of tours that cover all over
+          Egypt for you to choose from, our tours have been carefully organized
+          and planned to balance between ensuring your comfortable travel and
+          making sure you get as much as possible out of your holiday wherever
+          your destination is. With staff that has over 20 years of experience
+          in tourism and travel, OMANIA offers you only the best in affordable
+          prices. Wherever you would like to spend your holiday , we will offer
+          you best itinerary for your trip with the best guiding and competitive
+          rates.
+        </p>
+      </div>
+
+      <div class="play-container">
+
+        
+        <div class="main-img">
+          <img src="media\3c96f22335d7fc282cb97220e70edf28.jpg"   alt="" />
+          <h1 class="title">Romantic Escape</h1>
+          <p class="par">
+            
+          </p>
+        </div>
+
+        <div class="img-list">
+          <div class="imgs active">
+            <img src="media\3c96f22335d7fc282cb97220e70edf28.jpg"  alt="" />
+            <h3 class="title">Romantic Escape</h3>
+          </div>
+
+          <div class="imgs">
+            <img src="media\4e8f888b62093e161f86f99356f62362.jpg"   alt="" />
+            <h3 class="title">title1</h3>
+          </div>
+          <div class="imgs">
+            <img src="media\6ed9110df0ee1e8f42dba1ae750cb99a.jpg"  alt="" />
+            <h4 class="title">title2</h4>
+          </div>
+          
+        </div>
+      </div>
+
+      
+      <div class="play-container">
+        <div class="main-img main-img1">
+          <img src="media\gOsqy1.jpg"  alt="" />
+          <h1 class="title title1">Discover Egypt</h1>
+          <p class="par">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            viverra ante sollicitudin, mattis augue id, vulputate arcu. Etiam
+            hendrerit faucibus pharetra.
+          </p>
+        </div>
+
+        <div class="img-list img-list1">
+          <div class="imgs imgs1 active">
+            <img src="media\Aswan.jpg" alt="" />
+            <h3 class="title  title1">Aswan</h3>
+          </div>
+          <div class="imgs imgs1">
+            <img src="media\10f2c91fd56a20f2b6cbd73164a6b844.jpg"  />
+            <h4 class="title title1">Hurghada</h4>
+          </div>
+          <div class="imgs imgs1">
+            <img src="media\3e731d896f6a74376b4adc4df9001290.jpg" alt="" />
+            <h4 class="title  title1">Sahl Hasheesh</h4>
+          </div>
+          
+        </div>
+      </div>
+      <div class="play-container">
+        <div class="main-img main-img2">
+          <img src="media\image_1.png"  alt="" />
+          <h1 class="title title2">Discover Egypt</h1>
+          <p class="par">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            viverra ante sollicitudin, mattis augue id, vulputate arcu. Etiam
+            hendrerit faucibus pharetra.
+          </p>
+        </div>
+
+        <div class="img-list img-list2">
+          <div class="imgs imgs2 active">
+            <img src="media\image_1.png" alt="" />
+            <h3 class="title  title2">Aswan</h3>
+          </div>
+          <div class="imgs imgs2">
+            <img src="media\image_1.png"  />
+            <h4 class="title title2">Hurghada</h4>
+          </div>
+          <div class="imgs imgs2">
+            <img src="media\image_1.png" alt="" />
+            <h4 class="title  title2">Sahl Hasheesh</h4>
+          </div>
+          
+        </div>
+      </div>
+
+      <h1 style="text-align: center; font-size: 55px; color: #243746">
+        Featured Tours
+      </h1>
+      <div class="slider-wrapper">
+        <div class="slider-container">
+          <input type="radio" name="dot" id="one" />
+          <input type="radio" name="dot" id="two" />
+          <div class="main-card">
+            <div class="cards">
+              {% for x in pack %}
+              
+              <div class="card">
+                <a   href="{%  url 'details' x.id   %}" style="text-decoration: none; color: black;" >
+                <div class="content">
+                  <div class="simg">
+                    <img src='{{x.img.url}}' alt="" />
+                  </div>
+                  <div class="slider-details">
+                    <div class="cname">{{x.name}}</div>
+                    <div class="destination">Westminster Borough, London</div>
+                    <div class="slider-rating">
+                      <div class="rate-box">4.8</div>
+                      <div class="slider-stars">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <div class="rating-text">
+                          Exceptional
+                          <span style="color: #666666">3,014 reviews</span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                
+                </div>
+              </a>
+              </div>
+             
+              {% endfor %}
+
+                          </div>
+
+            <div class="cards">
+              {% for y in pack1 %}
+            
+              <div class="card">
+                <a href="{%  url 'details' y.id   %}" style="text-decoration: none; color: black;">
+                <div class="content">
+                  <div class="simg">
+                    <img src="{{y.img.url}}" alt="" />
+                  </div>
+                  <div class="slider-details">
+                    <div class="cname">{{y.name}}</div>
+                    <div class="destination">Westminster Borough, London</div>
+                    <div class="slider-rating">
+                      <div class="rate-box">4.8</div>
+                      <div class="slider-stars">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <div class="rating-text">
+                          Exceptional
+                          <span style="color: #666666">3,014 reviews</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+            
+              {% endfor %}
+
+             
+
+            </div>
+          </div>
+          <div class="slider-button">
+            <label for="one" class="one active"></label>
+            <label for="two" class="two"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+{% comment %} 
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Contact Us</span>
+        </p>
+        <div style="display: flex;">
+          <i class="fa fa-map-marker" style="color: #ffffff ; "></i>
+          <p style="color: #ffffff; font-size: small; font-weight: 200;">Shams Business Center, Sharjah Media City Free Zone, Al Messaned, Sharjah, UAE </p>
+        </div>
+
+        <div style="display: flex">
+          <i class="fa fa-phone" style="color: #ffffff"></i>
+          <p style="color: #ffffff; font-size: small; font-weight: 200;">(+123) 456 7890  / (+123) 456 7890</p>
+        </div>
+        <div style="display: flex">
+          <i class="fa fa-envelope" style="color: #ffffff"></i>
+          <p style="color: #ffffff; font-size: small; font-weight: 200;"><a href="mailto:sagar00001.co@gmail.com" style="color: #ffffff" >Support@domain.com </a></p>
+        </div>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-tripadvisor"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          
+         
+          <a href="#"><i class="fa fa-twitter"></i></a>
+         
+        </div>
+      </div>
+
+      <div class="footer-center">
+        
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Support</span>
+          <div class="policy" style="padding-left: 1rem;">
+            <ul>
+            <li style="padding-top: 1rem; "> <a href="#" style="color: #ffffff; font-size: small; font-weight: 200;">Contact</a></li>
+            <li style="padding-top: 1rem; "> <a href="#" style="color: #ffffff; font-size: small; font-weight: 200;">Legal Notice</a></li>
+            <li style="padding-top: 1rem; "> <a href="#" style="color: #ffffff; font-size: small; font-weight: 200;">Privacy Policy</a></li>
+            <li style="padding-top: 1rem; "> <a href="#" style="color: #ffffff; font-size: small; font-weight: 200;">Terms and Conditions</a></li>
+            <li style="padding-top: 1rem; "> <a href="#" style="color: #ffffff; font-size: small; font-weight: 200;">Sitemap</a></li>
+           
+          </ul>
+           
+          </div>
+
+        
+      </div>
+
+      
+
+
+
+
+    </footer> {% endcomment %}
+  </body>
+</html>
+{%load static%}
+<script src="{% static 'script.js' %}" ></script>
+<script src="{% static 'navbar.js' %}" ></script>
+<script>
+  let listimgs = document.querySelectorAll(".img-list .imgs");
+  let mainimg = document.querySelector(".main-img img");
+  let title = document.querySelector(".main-img .title");
+
+  listimgs.forEach((imgs) => {
+    imgs.onclick = () => {
+      listimgs.forEach((img) => img.classList.remove("active"));
+      imgs.classList.add("active");
+      if (imgs.classList.contains("active")) {
+        let src = imgs.children[0].getAttribute("src");
+        mainimg.src = src;
+        let text1 = imgs.children[1].innerHTML;
+        title.innerHTML = text1;
+      }
+    };
+  });
+</script>
+
+<script>
+  let listimgs1 = document.querySelectorAll(".img-list1 .imgs1");
+  let mainimg1 = document.querySelector(".main-img1 img");
+  let title1 = document.querySelector(".main-img1 .title1");
+
+  listimgs1.forEach((imgs) => {
+    imgs.onclick = () => {
+      listimgs1.forEach((img) => img.classList.remove("active"));
+      imgs.classList.add("active");
+      if (imgs.classList.contains("active")) {
+        let src = imgs.children[0].getAttribute("src");
+        mainimg1.src = src;
+        let text1 = imgs.children[1].innerHTML;
+        title1.innerHTML = text1;
+      }
+    };
+  });
+</script>
+
+
+
+
+<script>
+  let listimgs2 = document.querySelectorAll(".img-list2 .imgs2");
+  let mainimg2 = document.querySelector(".main-img2 img");
+  let title2 = document.querySelector(".main-img2 .title2");
+
+  listimgs2.forEach((imgs) => {
+    imgs.onclick = () => {
+      listimgs2.forEach((img) => img.classList.remove("active"));
+      imgs.classList.add("active");
+      if (imgs.classList.contains("active")) {
+        let src = imgs.children[0].getAttribute("src");
+        mainimg2.src = src;
+        let text2 = imgs.children[1].innerHTML;
+        title2.innerHTML = text2;
+      }
+    };
+  });
+</script>

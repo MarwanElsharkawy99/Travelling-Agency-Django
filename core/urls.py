@@ -12,6 +12,7 @@ urlpatterns = [
     # path('nav/',views.navbar,name='nav'),
     path('about/',views.about,name='about'),
     path('whatsapp/',views.whatsapp,name='whatsapp'),
+    path('booking/',views.booking,name='booking'),
 
 
     

@@ -5,15 +5,25 @@ class package(models.Model):
     name=models.CharField(max_length=256)
     price=models.FloatField(max_length=256)
     description=models.TextField()
+
     dest_from=models.CharField(max_length=256)
     dest_to=models.CharField(max_length=256)
     img=models.ImageField(upload_to='media')
     Included=models.TextField(default="NO conditions")
     Excluded=models.TextField(default="NO conditions")
+    def overview_lines(self):
+        return filter(None, (line.strip() for line in self.Included.splitlines()))
+    def overview_lines1(self):
+        return filter(None, (line.strip() for line in self. Excluded.splitlines()))
     
     def __str__(self):
         return self.name
     
+class gallery(models.Model):
+    package = models.ForeignKey(package, related_name='gallery', on_delete=models.CASCADE)
+    image = models.ImageField()
+
+   
 
 
 
@@ -47,6 +57,7 @@ class Hotel(models.Model):
     city = models.CharField(max_length=50)
     star_rating = models.IntegerField()
     website = models.URLField()
+    img=models.ImageField(upload_to='media',default="null")
 
     def __str__(self):
         return f"{self.name} ({self.city})"

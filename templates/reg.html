@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="reg">
+      
+      <section class="container">
+        <header>Registration Form</header>
+        <form method='post' class="form">
+          {% csrf_token %}
+          
+          <div class="input-box">
+            <label>Name</label>
+            <div class="fname">
+              {{form.first_name}}
+              {{form.last_name}}
+              {{ form.username}}
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Date of Birth</label>
+            {{form.date_birth}}
+          </div>
+
+          <div class="input-box">
+            <label>Nationality</label>
+             {{form.nationality}}
+          </div>
+
+          <div class="input-box">
+            <label>Address</label>
+            {{form.Address1}}
+            {{form.Address2}}
+            <div class="fname">
+              {{form.city}}
+              {{form.region}}
+            </div>
+            <div class="fname">
+              {{form.zipcode}}
+              {{form.country}}
+             
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Email </label>
+            {{form.email}}
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Mobile</label>
+              {{form.mobile}}
+              
+            </div>
+            <div class="input-box">
+              <label>Password</label>
+              {{form.password1}}
+              
+            </div>
+            <div class="input-box">
+              <label>Confirm password</label>
+              {{form.password2}}
+              
+            </div>
+          </div>
+          <div class="input-box1">
+            <input type="checkbox" placeholder="Enter Nationality" required />
+            <label>i agree with</label>
+          </div>
+          <p style="color: #949494; font-size: 15px; font-family: sans-serif; font-style: normal;">
+            By attaching my signature, i agree with my membership in the hotel
+            club and the processing of personal data provided for the purposes of
+            the hotel club program.
+          </p> 
+
+          <button type="submit" value="sign up" >SUBMIT</button>
+        </form>
+
+        
+      </section>
+
+      <div class="reg_img">
+        <img src="m_001_t_0324_i_19_aug_221.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
