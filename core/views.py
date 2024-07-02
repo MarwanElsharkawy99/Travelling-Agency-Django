@@ -39,9 +39,42 @@ def details(request,id):
     images1=package_details.gallery.all()[4:7]
     images2=package_details.gallery.all()[7:10]
     days = package_details.day.all()
+    days_len=len(days)
     hotels=package_details.hotel.all()
     pack1=package.objects.all()[0:3]
-    return render(request,'index1.html',{"pack_item":package_details,'day':days,'hotels':hotels,'images':images,'images1':images1,'images2':images2 ,'pack':pack1})
+    form = BookingForm(request.POST)
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            phone=form.cleaned_data['Phone']
+            
+            nationality=form.cleaned_data['nationality']
+            check_in=str(form.cleaned_data['check_in']) 
+            check_out=str(form.cleaned_data['check_out'])
+            room_type=form.cleaned_data['room_type']
+            number_of_adults=form.cleaned_data['number_of_adults']
+            number_of_children=form.cleaned_data['number_of_children']
+            number_of_infants=form.cleaned_data['number_of_infants']
+
+            print(name)
+
+            # html = render_to_string('contact/emails/contactform.html', {
+            #     'name': name,
+            #     'email': email,
+            #     'content': content
+            # })
+
+            send_mail(name,"\n".join([email,phone,nationality,check_in,check_out,room_type,number_of_adults,number_of_children,number_of_infants]),email,['marwanelsharkawy99@gmail.com'])
+
+            return redirect('booking')
+        else:
+            form = BookingForm()
+
+
+    return render(request,'index1.html',{"pack_item":package_details,'day':days,'hotels':hotels,'images':images,'images1':images1,'images2':images2 ,'pack':pack1,"len":days_len ,'form': form})
 
 def blog_details(request,id):
     blog_details=get_object_or_404(blog,pk=id)

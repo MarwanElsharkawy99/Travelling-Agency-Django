@@ -46,8 +46,8 @@
           <div class="row v-center">
             <div class="header-item item-left">
               <div class="logo">
-                <a href="#"
-                  ><img src="media/Logo Sizes-12.png" width="200px"
+                <a href="/"
+                  ><img src="../media/Logo Sizes-11.png" width="200px"
                 /></a>
               </div>
             </div>
@@ -62,7 +62,7 @@
                 </div>
                 <ul class="menu-main">
                   <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="#">About Us </a>
@@ -176,51 +176,35 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="download (2).jpg" class="d-block w-100" alt="..." />
+              <img src="{{pack_item.img.url}}" class="d-block w-100"  alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
+                <h5>{{pack_item.name}}</h5>
                 <p>
-                  Some representative placeholder content for the first slide.
+                  {{pack_item.description}}
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="download (3).jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="download (4).jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
+           
+            
           </div>
-          <button
+          {% comment %} <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          > {% endcomment %}
+            {% comment %} <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-          </button>
-          <button
+          </button> {% endcomment %}
+          {% comment %} <button
             class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          > {% endcomment %}
+            {% comment %} <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> {% endcomment %}
         </div>
       </div>
 
@@ -298,11 +282,11 @@
           <span>Tour Details</span>
         </div>
         <div class="details">
-          <h6>Duration:</h6>
-          <h6>Tour Location:</h6>
-          <h6>Tour Availability:</h6>
-          <h6>Pickup & Drop off:</h6>
-          <h6>Tour type:</h6>
+          <h6>Duration: {{len}} Days</h6>
+          <h6>Tour Location: {{pack_item.dest_to}}</h6>
+          {% comment %} <h6>Tour Availability:</h6>
+          <h6>Pickup & Drop off:</h6> {% endcomment %}
+          <h6>Tour type: Family OverLand</h6>
         </div>
         <div class="daysContent">
           <div class="page_titles">
@@ -310,7 +294,7 @@
           </div>
           {% for d in day %}
           <div class="days">
-            <span>{{ d.day_number }}: {{ d.title }}</span>
+            <span>Day{{ d.day_number }}: {{ d.title }}</span>
           </div>
 
           <div class="d-flex" style="height: auto">
@@ -338,7 +322,7 @@
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star rating-color"></i>
               </div>
             </div>
 
@@ -410,7 +394,7 @@
         </div> {% endcomment %}
 
         <div class="page_titles">
-          <span id="Before_you_go1">Read before you go</span>
+          <span id="Beforeyougo1">Read before you go</span>
         </div>
         <div class="card-container">
           {% for x in pack %}
@@ -427,35 +411,25 @@
         <div
           class="Whatsapp"
           style="
-            position: fixed;
-            bottom: 5% !important;
-            left: 85% !important;
-            z-index: 1;
-            border-radius: 12px;
-            background-color: #243746;
-            display: flex;
-            padding: 0.5rem;
-            color: white;
+           
           "
         >
-          <a
-            href="https://wa.me/+201026957222?text=I'm%20interested%20in%20your%20Package%20for%20sale"
-          >
-            <a href="#"
+          
+            <a href="https://wa.me/+201026957222?text=I'm%20interested%20in%20your%20Package%20for%20sale"
              style="color: white;" ><i
                 class="fa fa-whatsapp"
                 style="color: white; padding-right: 0.1rem;"
               ></i>
               Whatsapp
             </a>
-          </a>
+          
         </div>
       </article>
     </main>
     <div class="bookconatiner">
       <div class="booking">
         <section class="container">
-          <header>Book your trip</header>
+          <header id="Book_your_trip1">Book your trip</header>
           <form  method="post" action="." class="form">
             {% csrf_token %}
             <div class="input-box">
@@ -554,7 +528,7 @@
         </section>
 
         <div class="form-img">
-          <img src="media\room_3065_2909.jpg" alt="" />
+          <img src="../media/m_1.png" alt="" />
         </div>
       </div>
     </div>

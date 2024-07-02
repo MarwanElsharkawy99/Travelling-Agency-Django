@@ -122,7 +122,7 @@ aside {
   color: #ffffff;
 }
 
-#Itinerary:checked ~ .list .indicator {
+/* #Itinerary:checked ~ .list .indicator {
   top: 58px;
 }
 
@@ -150,7 +150,7 @@ aside {
 
 #Book_your_trip:checked ~ .list .indicator {
   top: 505px;
-}
+} */
 .content input[type="radio"] {
   display: none;
 }
@@ -491,7 +491,7 @@ aside {
   display: flex;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-bottom: 50rem;
+  margin-bottom: 55rem;
 }
 
 .form-img {
@@ -519,13 +519,13 @@ aside {
     display: none;
   }
   .booking {
-    margin-bottom: 40rem;
+    /* margin-bottom: 40rem; */
   }
 }
 
 @media screen and (max-width: 600px) {
   .booking {
-    height: 400px;
+    
   }
   .form .column {
     flex-wrap: wrap;
@@ -673,6 +673,11 @@ aside {
 }
 
 @media (max-width: 991px) {
+  .signup {
+    
+ 
+    margin-left: -500px;
+  }
   .play-container {
     grid-template-columns: 1.5fr 1.5fr;
   }
@@ -715,22 +720,69 @@ aside {
     font-size: 15px;
   }
 }
-@media (max-width: 430px) {
-  
+@media (max-width: 450px) {
   .play-container {
+    /* background-color: red; */
     grid-template-columns: 1.5fr 1.5fr;
 
-    margin-left: 90px;
+    margin-left: -90px;
 
     width: 100%;
   }
-  .play-container .main-img {
-    background-color: black;
+  .carousel-inner{
+    background-color: red;
   }
-  .play-container .img-list {
+  .carouselHolder {
+    width: 500px;
+  }
+  .tours {
+    margin-left: -90px;
+  }
+
+  .main-img .title {
+    position: relative;
+    bottom: 110px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: -29px;
+  }
+
+  .footer-distributed {
+    width: 500px;
+  }
+
+  .about {
+    text-align: center;
+    margin-top: 12rem;
+    margin-left: -90px;
+  }
+
+  .signup {
+    
+ 
+    margin-left: -1100px;
+  }
+  .Whatsapp{
+    position: fixed;
+    bottom: 5% !important;
+    left: 78% !important;
+    z-index: 1;
+    border-radius: 12px;
+    background-color: #243746;
+    display: flex;
+    padding: 0.5rem;
+    color: white;
+  }
+  
+
+  /* .play-container .main-img {
+    background-color: black;
+  } */
+  /* .play-container .img-list {
     width: fit-content;
     height: 50%;
-  }
+  } */
 }
 
 /* @media (max-width: 768px) {
@@ -1090,9 +1142,10 @@ a {
   justify-content: flex-end;
 }
 .header .item-right a {
+  
   text-decoration: none;
   font-size: 16px;
-  color: black;
+  color: white;
   display: inline-block;
   margin-left: 10px;
   transition: color 0.3s ease;
@@ -1105,7 +1158,7 @@ a {
 .header .menu > ul > li > a {
   font-size: 15px;
   font-weight: 500;
-  color: #000000;
+  color: white;
   position: relative;
   text-transform: capitalize;
   transition: color 0.3s ease;
@@ -1231,7 +1284,7 @@ a {
   .header .mobile-menu-trigger span {
     display: block;
     height: 2px;
-    background-color: #333333;
+    background-color: white;
     width: 24px;
     position: relative;
   }
@@ -1242,7 +1295,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #333333;
+    background-color: white;
   }
   .header .mobile-menu-trigger span:before {
     top: -6px;
@@ -1300,7 +1353,7 @@ a {
     position: relative;
     z-index: 501;
     position: sticky;
-    background-color: #ffffff;
+    background-color: #243746;
     top: 0;
   }
   .header .menu .mobile-menu-head .go-back {
@@ -1320,7 +1373,7 @@ a {
   .header .menu .mobile-menu-head .current-menu-title {
     font-size: 15px;
     font-weight: 500;
-    color: #000000;
+    color: white;
   }
   .header .menu .mobile-menu-head .mobile-menu-close {
     height: 50px;
@@ -1336,6 +1389,7 @@ a {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #243746;
   }
   .header .menu > ul > li .sub-menu.mega-menu,
   .header .menu > ul > li .sub-menu {
@@ -1355,9 +1409,11 @@ a {
     display: none;
     transform: translateX(0%);
     overflow-y: auto;
+    background-color: #243746;
   }
   .header .menu > ul > li .sub-menu.active {
     display: block;
+    
   }
   @keyframes slideLeft {
     0% {
@@ -1407,6 +1463,7 @@ a {
   .header .menu > ul > li .sub-menu > ul > li > a,
   .header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
     display: block;
+    color: white;
   }
   .header .menu > ul > li .sub-menu.mega-menu > .list-item > ul {
     margin-bottom: 15px;
@@ -1433,8 +1490,8 @@ a {
 
 header {
   text-align: center;
-  padding-top: 100px;
-  margin-bottom: 300px;
+  /* padding-top: 100px;
+  margin-bottom: 300px; */
   font-size: 35px;
 }
 
@@ -1449,23 +1506,33 @@ header span {
 /* The footer is fixed to the bottom of the page */
 
 footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
 }
 
-@media (max-height: 800px) {
-  footer {
-    position: static;
-  }
-  header {
-    height: 100px;
-  }
+
+.signup {
+ 
+  border-radius: 5px;
+  width: 176px;
+  height: 58px;
+  border: none;
+  position: relative;
+  left: 500px;
+  bottom: 60px;
+  color: #000;
+  background-color: white;
+}
+.signup a{
+  color: #000;
+  z-index: 1000;
+  cursor: pointer;
 }
 
 .footer-distributed {
   background-color: #243746;
   box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
   text-align: left;
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
@@ -1621,10 +1688,10 @@ footer {
     margin-left: 0;
   }
 }
-.whatsapp {
+.Whatsapp{
   position: fixed;
   bottom: 5% !important;
-  left: 85% !important;
+  left: 78% !important;
   z-index: 1;
   border-radius: 12px;
   background-color: #243746;

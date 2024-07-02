@@ -17,7 +17,7 @@
     {% load static %}
   <link rel="stylesheet" href="{% static 'index.css' %}" />
 
-    <title>Document</title>
+    <title>OMANIA</title>
   </head>
   <body>
     <div class="wrapper">
@@ -27,8 +27,8 @@
           <div class="row v-center">
             <div class="header-item item-left">
               <div class="logo">
-                <a href="#"
-                  ><img src="media\Logo Sizes-12.png" width="200px"
+                <a href="/"
+                  ><img src="media\Logo Sizes-11.png" width="200px"
                 /></a>
               </div>
             </div>
@@ -43,7 +43,7 @@
                 </div>
                 <ul class="menu-main">
                   <li>
-                    <a href="#" >Home</a>
+                    <a href="/" >Home</a>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="#" >About Us </a>
@@ -162,22 +162,24 @@
               
               <div class="carousel-caption d-none d-md-block" >
                 <h1 style="text-align: start">Welcome To Egypt</h1>
+                
                
                 <p
                   style="
-                    text-align: start;
-                    width: 70%;
+                    /* text-align: start; */
+                    
+
+                    width: 100%;
                     font-size: 15px;
                     font-weight: 600;
                   "
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur viverra ante sollicitudin, mattis augue id,
-                  vulputate arcu. Etiam hendrerit faucibus pharetra.
+               
                 </p>
-
-                <button style=" background-color: #ffffff; border-radius: 5px; width: 176px; height: 58px; border: none;  position: relative; left: 500px;
-                bottom: 60px;">sign-up</button>
+                <button class="signup"><a href="{% url 'signup'  %}">sign-up</a></button>
+                
+                
+                
 
 
                 
@@ -187,6 +189,7 @@
         </div>
       </div>
     </div>
+    
 
     <div class="homewrap">
       <div class="about">
@@ -223,11 +226,11 @@
 
           <div class="imgs">
             <img src="media\4e8f888b62093e161f86f99356f62362.jpg"   alt="" />
-            <h3 class="title">title1</h3>
+            {% comment %} <h3 class="title">title1</h3> {% endcomment %}
           </div>
           <div class="imgs">
             <img src="media\6ed9110df0ee1e8f42dba1ae750cb99a.jpg"  alt="" />
-            <h4 class="title">title2</h4>
+            {% comment %} <h4 class="title">title2</h4> {% endcomment %}
           </div>
           
         </div>
@@ -239,36 +242,41 @@
           <img src="media\gOsqy1.jpg"  alt="" />
           <h1 class="title title1">Discover Egypt</h1>
           <p class="par">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            {% comment %} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             viverra ante sollicitudin, mattis augue id, vulputate arcu. Etiam
-            hendrerit faucibus pharetra.
+            hendrerit faucibus pharetra. {% endcomment %}
           </p>
         </div>
 
         <div class="img-list img-list1">
+
+          <div class="imgs imgs1 active">
+            <img src="media\gOsqy1.jpg"  alt="" />
+            {% comment %} <h3 class="title  title1">Aswan</h3> {% endcomment %}
+          </div>
           <div class="imgs imgs1 active">
             <img src="media\Aswan.jpg" alt="" />
-            <h3 class="title  title1">Aswan</h3>
+            {% comment %} <h3 class="title  title1">Aswan</h3> {% endcomment %}
           </div>
           <div class="imgs imgs1">
             <img src="media\10f2c91fd56a20f2b6cbd73164a6b844.jpg"  />
-            <h4 class="title title1">Hurghada</h4>
+            {% comment %} <h4 class="title title1">Hurghada</h4> {% endcomment %}
           </div>
           <div class="imgs imgs1">
             <img src="media\3e731d896f6a74376b4adc4df9001290.jpg" alt="" />
-            <h4 class="title  title1">Sahl Hasheesh</h4>
+            {% comment %} <h4 class="title  title1">Sahl Hasheesh</h4> {% endcomment %}
           </div>
           
         </div>
       </div>
-      <div class="play-container">
+      {% comment%}<div class="play-container">
         <div class="main-img main-img2">
           <img src="media\image_1.png"  alt="" />
           <h1 class="title title2">Discover Egypt</h1>
           <p class="par">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             viverra ante sollicitudin, mattis augue id, vulputate arcu. Etiam
-            hendrerit faucibus pharetra.
+            hendrerit faucibus pharetra.  -->
           </p>
         </div>
 
@@ -287,9 +295,9 @@
           </div>
           
         </div>
-      </div>
+      </div> {% endcomment %}
 
-      <h1 style="text-align: center; font-size: 55px; color: #243746">
+      <h1 class="tours" style="text-align: center; font-size: 55px; color: #243746">
         Featured Tours
       </h1>
       <div class="slider-wrapper">
@@ -310,7 +318,7 @@
                     <div class="cname">{{x.name}}</div>
                     <div class="destination">Westminster Borough, London</div>
                     <div class="slider-rating">
-                      <div class="rate-box">4.8</div>
+                      <div class="rate-box">5</div>
                       <div class="slider-stars">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -348,7 +356,7 @@
                     <div class="cname">{{y.name}}</div>
                     <div class="destination">Westminster Borough, London</div>
                     <div class="slider-rating">
-                      <div class="rate-box">4.8</div>
+                      <div class="rate-box">5 </div>
                       <div class="slider-stars">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -379,7 +387,21 @@
         </div>
       </div>
     </div>
-{% comment %} 
+    <div
+    class="Whatsapp"
+    
+  >
+   
+      <a href="https://wa.me/+201026957222?text=I'm%20interested%20in%20your%20Package%20for%20sale"
+       style="color: white;" ><i
+          class="fa fa-whatsapp"
+          
+        ></i>
+        Whatsapp
+      </a>
+    
+  </div>
+ 
     <footer class="footer-distributed">
       <div class="footer-right">
         <p class="footer-company-about">
@@ -438,7 +460,7 @@
 
 
 
-    </footer> {% endcomment %}
+    </footer> 
   </body>
 </html>
 {%load static%}
